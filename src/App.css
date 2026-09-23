@@ -1,0 +1,62 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.page-content {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 70px;
+}
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: var(--card);
+  display: flex;
+  border-top: 1px solid #d9d0bc;
+  z-index: 100;
+}
+
+.nav-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+
+.nav-btn.active {
+  color: var(--accent2);
+  font-weight: 600;
+}
+
+.nav-icon {
+  font-size: 20px;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  background: #e05a2b;
+  color: white;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 1px 4px;
+  border-radius: 8px;
+  line-height: 1.4;
+}
